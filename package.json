@@ -1,0 +1,56 @@
+{
+  "name": "cryptocurrency-manager",
+  "version": "0.0.1",
+  "description": "managing assets",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "webpack",
+    "watch:tsm": "tsm src/renderer",
+    "watch:webpack": "npx webpack --progress --watch",
+    "watch:tsc": "tsc --noEmit --watch",
+    "dev": "run-p watch:* start",
+    "clear": "rd /s /q node_modules",
+    "rbuild:win": "electron-packager . --overwrite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polites-co-jp/AssetManager.git"
+  },
+  "author": "selene",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/polites-co-jp/AssetManager/issues"
+  },
+  "homepage": "https://github.com/polites-co-jp/AssetManager#readme",
+  "dependencies": {
+    "ccxt": "^1.56.23",
+    "dotenv": "^10.0.0",
+    "electron-packager": "^15.4.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.5",
+    "redux": "^4.1.1",
+    "redux-devtools-extension": "^2.13.9",
+    "source-map-support": "^0.5.20",
+    "typescript-fsa": "^3.0.0",
+    "typescript-fsa-reducers": "^1.2.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.20",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-redux": "^7.1.18",
+    "@types/redux": "^3.6.0",
+    "css-loader": "^6.2.0",
+    "electron": "^14.0.0",
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5",
+    "react-devtools": "^4.18.0",
+    "sass-loader": "^12.1.0",
+    "ts-loader": "^9.2.5",
+    "typed-scss-modules": "^4.1.1",
+    "typescript": "^4.4.2",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0"
+  }
+}
