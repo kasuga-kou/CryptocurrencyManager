@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/polites-co-jp/AssetManager.git"
+    "url": "git+https://github.com/kasuga-kou/CryptocurrencyManager.git"
   },
   "author": "selene",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/polites-co-jp/AssetManager/issues"
+    "url": "https://github.com/kasuga-kou/CryptocurrencyManager/issues"
   },
-  "homepage": "https://github.com/polites-co-jp/AssetManager#readme",
+  "homepage": "https://github.com/kasuga-kou/CryptocurrencyManager#readme",
   "dependencies": {
     "ccxt": "^1.56.23",
     "dotenv": "^10.0.0",
