@@ -99,7 +99,7 @@ export default class Index extends React.Component<IProps, IState> {
   public render() {
     return (
       <section>
-        <h1>Period 1: Acquisition of information on crypto assets.</h1>
+        <h1>Chapter 1: Acquisition of information on crypto assets.</h1>
         <section className="input-area">
           <label>
             Symbol:
