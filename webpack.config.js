@@ -55,11 +55,32 @@ var renderer = {
     rules: [
       {
         test: /\.(tsx|ts)$/,
-        use: ['ts-loader'],
+        use: [
+          {
+            loader: 'ts-loader',
+            options: {
+              transpileOnly: true,
+              configFile: 'tsconfig.json',
+            },
+          },
+        ],
         include: [
           path.resolve(__dirname, 'src'),
           path.resolve(__dirname, 'node_modules'),
         ],
+      },
+      {
+        test: /(\.s[ac]ss)$/,
+        use: [
+          'style-loader',
+          'css-loader?modules=true&url=false',
+          // 'css-loader',
+          'sass-loader',
+        ],
+        // include: [
+        //   path.resolve(__dirname, 'src'),
+        //   path.resolve(__dirname, 'node_modules'),
+        // ],
       },
     ],
   },

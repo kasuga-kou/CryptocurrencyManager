@@ -2,10 +2,10 @@ import * as React from 'react';
 import { Dispatch } from 'redux';
 import { ILocalState } from '../../redux/reducer';
 
-import style from './style.scss';
 import ccxt from 'ccxt';
 import { Ticker } from 'ccxt';
 
+import style from './style.scss';
 export interface IProps extends ILocalState {
   dispatch?: Dispatch<any>;
   className?: string;
@@ -124,21 +124,23 @@ export default class Index extends React.Component<IProps, IState> {
         <hr />
         <section className="result-area">
           <table>
-            <tr>
-              <th>Symbol</th>
-              <td>{this.state.priceData?.symbol}</td>
-            </tr>
-            <tr>
-              <th>DateTime</th>
-              <td>{this.state.priceData?.datetime}</td>
-            </tr>
-            <tr>
-              <th>Price</th>
-              <td>
-                {this.state.priceData?.close}
-                {this.state.priceData?.symbol.split('/')[1]}
-              </td>
-            </tr>
+            <tbody>
+              <tr>
+                <th>Symbol</th>
+                <td>{this.state.priceData?.symbol}</td>
+              </tr>
+              <tr>
+                <th>DateTime</th>
+                <td>{this.state.priceData?.datetime}</td>
+              </tr>
+              <tr>
+                <th>Price</th>
+                <td>
+                  {this.state.priceData?.close}
+                  {this.state.priceData?.symbol.split('/')[1]}
+                </td>
+              </tr>
+            </tbody>
           </table>
         </section>
       </section>

@@ -1,2 +1,2 @@
-export const dummay: string;
 export const dummy: string;
+export const redArea: string;

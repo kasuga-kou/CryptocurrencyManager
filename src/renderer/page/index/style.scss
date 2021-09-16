@@ -3,9 +3,10 @@
     color: black;
   }
 
-  :local {
-    .dummay {
-      color: black;
-    }
+}
+
+:local {
+  .redArea {
+    color: #FF0000;
   }
 }
